@@ -42,19 +42,19 @@ window.onkeypress(aller_gauche,"a")
 
 
 def deplacement_balle():
-    while True:
-        ball.setx(ball.xcor() + ball.dx)
-        ball.sety(ball.ycor() + ball.dy)
+    ball.setx(ball.xcor() + ball.dx)
+    ball.sety(ball.ycor() + ball.dy)
         
-        if ball.xcor() > 280:     # Rebond à droite
-            ball.dx *= -1
-        elif ball.xcor() < -280:  # Rebond à gauche
-            ball.dx *= -1
-        elif ball.ycor() > 280:   # Rebond en haut
-            ball.dy *= -1
-        elif ball.ycor() < -280:  # Rebond en bas
-            ball.dy *= -1
+    if ball.xcor() > 280:     # Rebond à droite
+        ball.dx *= -1
+    elif ball.xcor() < -280:  # Rebond à gauche
+        ball.dx *= -1
+    elif ball.ycor() > 280:   # Rebond en haut
+        ball.dy *= -1
+    elif ball.ycor() < -280:  # Rebond en bas
+        ball.dy *= -1
 
 
-
-deplacement_balle()
+while True:
+    window.update()
+    deplacement_balle()
