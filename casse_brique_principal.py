@@ -24,14 +24,21 @@ ball.dx = -2
 ball.dy = -2
 
 def aller_droite():
-    print("test")
-    barre.forward(30)
-    
-    
+    x = barre.xcor()
+    x += 20
+    barre.setx(x)
+
+window.listen()
+window.onkeypress(aller_droite,"d")
+
     
 def aller_gauche():
-    barre.backward(30)
+    x = barre.xcor()
+    x -= 20
+    barre.setx(x)
 
+window.listen()
+window.onkeypress(aller_gauche,"a")
 
 
 def deplacement_balle():
@@ -48,7 +55,6 @@ def deplacement_balle():
         elif ball.ycor() < -280:  # Rebond en bas
             ball.dy *= -1
 
+
+
 deplacement_balle()
-tr.onkey(aller_droite,"d")
-tr.onkey(aller_gauche,"a")
-window.listen()
