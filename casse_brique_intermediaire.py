@@ -25,6 +25,7 @@ ball.dy = -2
     
     
 def aller_droite():
+    """Permer à la barre d'aller à droite"""
     x = barre.xcor()
     x += 20
     barre.setx(x)
@@ -34,6 +35,7 @@ window.onkeypress(aller_droite,"d")
 
     
 def aller_gauche():
+    """Permet à la barre d'aller à gauche"""
     x = barre.xcor()
     x -= 20
     barre.setx(x)
@@ -43,6 +45,7 @@ window.onkeypress(aller_gauche,"a")
 
 
 def deplacement_balle():
+    """Fais bouger la balleet changer sa direction"""
     ball.setx(ball.xcor() + ball.dx)
     ball.sety(ball.ycor() + ball.dy)
         
@@ -57,6 +60,7 @@ def deplacement_balle():
 
 
 def game_over_text():
+    """Fais apparaître le texte Game Over"""
     game_over_text = tr.Turtle()
     game_over_text.color("red")
     game_over_text.penup()
@@ -66,6 +70,7 @@ def game_over_text():
     
     
 def game_over():
+    """Stoppe la partie"""
     ball.dx = 0
     ball.dy = 0
     ball.clear()
