@@ -22,7 +22,8 @@ ball.penup()
 ball.setposition(0,-150)
 ball.dx = -2
 ball.dy = -2
-
+    
+    
 def aller_droite():
     x = barre.xcor()
     x += 20
@@ -55,6 +56,26 @@ def deplacement_balle():
         ball.dy *= -1
 
 
+def game_over_text():
+    game_over_text = tr.Turtle()
+    game_over_text.color("red")
+    game_over_text.penup()
+    game_over_text.goto(0, 50) # pour afficher le message plus haut  
+    game_over_text.write("Game Over :/", align = "center", font = ("chalkduster", 40, "normal"))
+    game_over_text.hideturtle()
+    
+    
+def game_over():
+    ball.dx = 0
+    ball.dy = 0
+    ball.clear()
+    game_over_text()
+    text_restart_game()
+
+
 while True:
     window.update()
     deplacement_balle()
+    
+    if ball.ycor() < -280:
+         game_over()
