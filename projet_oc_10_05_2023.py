@@ -1,10 +1,7 @@
+"""Création et mouvement de la balle"""
+
 import turtle as tr
 import random
-
-window = tr.Screen()
-window.bgcolor("yellow")
-window.setup(width=600, height=600)
-
 
 ball = tr.Turtle()
 ball.speed(0)
