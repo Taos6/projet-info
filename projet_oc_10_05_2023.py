@@ -14,7 +14,7 @@ ball.dx = -2
 ball.dy = -2
 
 
-def deplacement_bord():
+def deplacement_balle():
     """Fais se déplacer la balle"""
     while True:
         ball.setx(ball.xcor() + ball.dx)
@@ -31,5 +31,5 @@ def deplacement_bord():
         
         
 if __name__ == "__main__":
-    deplacement_bord()
+    deplacement_balle()
     window.listen()
