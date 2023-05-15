@@ -1,7 +1,7 @@
 import turtle as tr
 import game_over as over
-import projet_oc_10_05_2023 as move_balle
-import creation_mouvement_barre as bar
+import creation_mouvement_balle as move_balle
+import creation_mouvement_barre as move_barre
 
 window = tr.Screen()
 window.bgcolor("black")
