@@ -25,27 +25,25 @@ ball.dx = -2
 ball.dy = -2
 
 vie = 3
+tr.register_shape("image coeur.gif")
 
 carre1 = tr.Turtle()
 carre1.speed(0)
-carre1.shape("square")
-carre1.shapesize(stretch_wid=0.5, stretch_len=0.5)
+carre1.shape("image coeur.gif")
 carre1.color("yellow")
 carre1.penup()
 carre1.setposition(280, 260)
 
 carre2 = tr.Turtle()
 carre2.speed(0)
-carre2.shape("square")
-carre2.shapesize(stretch_wid=0.5, stretch_len=0.5)
+carre2.shape("image coeur.gif")
 carre2.color("yellow")
 carre2.penup()
 carre2.setposition(250, 260)
 
 carre3 = tr.Turtle()
+carre3.shape("image coeur.gif")
 carre3.speed(0)
-carre3.shape("square")
-carre3.shapesize(stretch_wid=0.5, stretch_len=0.5)
 carre3.color("yellow")
 carre3.penup()
 carre3.setposition(220, 260)
