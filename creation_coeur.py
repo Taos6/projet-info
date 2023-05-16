@@ -27,6 +27,7 @@ carre3.setposition(220, 260)
 
 
 def nb_vie():
+    """Ce message donne une instruction sur le nombre de vie"""
     vies_text = tr.Turtle()
     vies_text.speed(0)
     vies_text.color("white")
