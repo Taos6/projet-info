@@ -1,4 +1,5 @@
 import turtle as tr
+import module_briques
 
 window = tr.Screen()
 window.bgcolor("black")
@@ -22,7 +23,7 @@ def augmentation_score():
     score = 0
     if brique_disparait:
         brique.supprime(briques)
-    score += 100
+        score += 100
     score_texte.clear()
     score_text.write("Score: {}".format(score), align="center", font=("Courier", 12, "normal"))
     
