@@ -1,4 +1,10 @@
+"""ce fichier s'occuppe de la création des briques de notre jeu"""
 window.register_shape("brick", ((0,0), (10,0), (10,50), (0,50)))
+window = tr.Screen()
+window.bgcolor("black")
+window.setup(width=600, height=600)
+
+
 colors = ["sky blue", "tomato", "lime green", "yellow"]
 
 
