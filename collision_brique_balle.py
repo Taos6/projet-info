@@ -6,14 +6,14 @@ import module_briques as brick
 
 """Vérifie si la balle touche une brique"""
 def collision_brique():
-    for ligne_briques in briques.brick:
+    for ligne_briques in brick.briques:
         for brique in ligne_briques:
-            if brique.distance(ball) < 25\
+            if brique.distance(move_balle.ball) < 25\
             and move_balle.ball.ycor() < brique.ycor() + 25\
             and move_balle.ball.ycor() > brique.ycor() - 25:
                 brique.hideturtle()
                 ligne_briques.remove(brique)
-                ball.dy *= -1
+                move_balle.ball.dy *= -1
 
 
 
