@@ -2,6 +2,7 @@ window.register_shape("brick", ((0,0), (10,0), (10,50), (0,50)))
 colors = ["sky blue", "tomato", "lime green", "yellow"]
 
 
+"""fonction pour créer les briques"""
 def makeRow(x, y, colors):
     index = random.randint(0,len(colors) - 1)
     row = []
@@ -20,11 +21,14 @@ def makeRow(x, y, colors):
     return row
 makeRow(-230,230,colors)
 
+"""position initiale des briques"""
 x_base = -230
 y_base = 200
 
+"""liste des lignes de briques"""
 briques = []
 
+"""ajout des lignes de briques"""
 for i in range (3):
     briques.append(makeRow(×_base, y_base - i * 35, colors))
 window.update
