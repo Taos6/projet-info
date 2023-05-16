@@ -4,6 +4,8 @@ import creation_mouvement_balle as move_balle
 import creation_mouvement_barre as move_barre
 import creation_coeur as coeur
 import collision_balle_barre as collision1
+import module_briques as brik
+
 
 window = tr.Screen()
 window.bgcolor("black")
