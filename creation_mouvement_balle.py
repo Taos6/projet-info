@@ -6,7 +6,7 @@ import random
 ball = tr.Turtle()
 ball.speed(0)
 ball.shape("circle")
-ball.shapesize(stretch_wid = 1.5, stretch_len = 1.5)
+ball.shapesize(stretch_wid = 0.75, stretch_len = 0.75)
 ball.color("red")
 ball.penup()
 ball.setposition(0,-150)
