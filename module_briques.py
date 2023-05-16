@@ -11,7 +11,7 @@ def makeRow(x, y, colors):
     
     for i in range(8):
         
-        brique = turtle.Turtle()
+        brique = tr.Turtle()
         brique.speed(0)
         brique.shape("brick")
         brique.color(colors[index])
@@ -23,7 +23,7 @@ def makeRow(x, y, colors):
     return row
 makeRow(-230,230,colors)
 
-"""positions initiale des briques"""
+"""position initiale des briques"""
 x_start = -230
 y_start = 200
 
