@@ -1,9 +1,12 @@
 """ce fichier s'occuppe de la création des briques de notre jeu"""
-window.register_shape("brick", ((0,0), (10,0), (10,50), (0,50)))
+
+import turtle as tr
+import random 
+
 window = tr.Screen()
 window.bgcolor("black")
 window.setup(width=600, height=600)
-
+window.register_shape("brick", ((0,0), (10,0), (10,50), (0,50)))
 
 colors = ["sky blue", "tomato", "lime green", "yellow"]
 
@@ -25,7 +28,7 @@ def makeRow(x, y, colors):
         row.append(brique)
         index = random.randint(0,len(colors) - 1)
     return row
-makeRow(-230,230,colors)
+
 
 """position initiale des briques"""
 x_base = -230
