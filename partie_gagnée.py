@@ -1,7 +1,8 @@
-
 """détermine le nombre de briques"""
 
-briques_restantes = len(briques)
+import module_briques as brick
+
+briques_restantes = len(brick.briques)
 
 
 """affiche le message de victoire lorsqu'il n'y a plus de briques """
