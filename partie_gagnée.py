@@ -11,7 +11,7 @@ def potentielle_victoire():
         potentielle_victoire.color("green")
         potentielle_victoire.penup()
         potentielle_victoire.goto(0, 50) # pour afficher le message plus haut  
-        potentielle_victoire.write("Bravo tu as gagné ! :/", align = "center", font = ("chalkduster", 40, "normal"))
+        potentielle_victoire.write("Bravo tu as gagné ! ", align = "center", font = ("chalkduster", 40, "normal"))
         potentielle_victoire.hideturtle()
                 
         
