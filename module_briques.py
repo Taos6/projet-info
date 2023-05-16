@@ -1,4 +1,4 @@
-screen.register_shape("brick", ((0, 0), (10, 0), (10, 50), (0, 50)))
+window.register_shape("brick", ((0, 0), (10, 0), (10, 50), (0, 50)))
 
 """couleur des briques"""
 colors = ["sky blue", "tomato", "lime green", "yellow"]
