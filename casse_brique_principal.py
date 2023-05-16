@@ -5,6 +5,8 @@ import creation_mouvement_barre as move_barre
 import creation_coeur as coeur
 import collision_balle_barre as collision1
 import module_briques as brik
+import collision_brique_balle as collision2
+import partie_gagnée as win
 
 
 window = tr.Screen()
@@ -15,8 +17,10 @@ coeur.nb_vie()
 
 while True:
     window.update()
+    win.potentielle_victoire()
     move_balle.deplacement_balle()
     collision1.collision_barre()
+    collision2.collision_brique()
     if move_balle.ball.ycor() < -280:
         print(move_balle.ball.ycor())
         coeur.vie -= 1
