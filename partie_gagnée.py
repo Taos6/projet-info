@@ -7,7 +7,7 @@ briques_restantes = len(briques)
 """affiche le message de victoire lorsqu'il n'y a plus de briques """
 
 def potentielle_victoire():
-    global briques_restantes
+   
     
     if briques_restantes == 0:
         potentielle_victoire = tr.Turtle()
