@@ -13,10 +13,10 @@ def collision_barre():
     and move_balle.ball.xcor() < move_barre.barre.xcor() + 50\
     and move_balle.ball.xcor() > move_barre.barre.xcor() - 50:
         move_balle.ball.dy *= -1
-
-while True:
-    window.update()
-    move_balle.deplacement_balle()
-    collision_barre()
-    if move_balle.ball.ycor() < -280:
-        move_balle.ball.goto(0,-150)
+if __name__ == "__main__":
+    while True:
+        window.update()
+        move_balle.deplacement_balle()
+        collision_barre()
+        if move_balle.ball.ycor() < -280:
+            move_balle.ball.goto(0,-150)
