@@ -1,4 +1,6 @@
 """Gère la défaite"""
+import creation_mouvement_balle as move_balle
+import turtle as tr
 
 
 def game_over_text():
@@ -13,8 +15,8 @@ def game_over_text():
 
 def game_over():
     """Stoppe la partie"""
-    ball.dx = 0
-    ball.dy = 0
-    ball.clear()
+    move_balle.ball.dx = 0
+    move_balle.ball.dy = 0
+    move_balle.ball.clear()
     game_over_text()
     text_restart_game()
