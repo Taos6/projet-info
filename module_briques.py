@@ -26,6 +26,6 @@ y_base = 200
 briques = []
 
 for i in range (3):
-    briques.append(makeRow(×_base, y_base - i * 35, colors))
+    briques.append(makeRow(x_base, y_base - i * 35, colors))
 window.update
 
