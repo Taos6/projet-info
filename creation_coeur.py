@@ -33,7 +33,7 @@ def nb_vie():
     vies_text.color("white")
     vies_text.penup()
     vies_text.setposition(280, 280)
-    vies_text.write("Vous avez 3 vies et les carrés représentent le nombre de vies restants", align="right", font=("Goudy Old Style", 15, "normal"))
+    vies_text.write("Vous avez 3 vies et les coeurs représentent le nombre de vies restants", align="right", font=("Goudy Old Style", 15, "normal"))
     vies_text.hideturtle()
     
 
