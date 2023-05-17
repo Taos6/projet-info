@@ -9,14 +9,17 @@ import partie_gagnée as win
 def collision_brique():
     for ligne_briques in brick.briques:
         for brique in ligne_briques:
-            if brique.distance(move_balle.ball) < 25:
+            if move_balle.ball.ycor()  < brique.ycor() + 5\
+               and move_balle.ball.ycor() > brique.ycor() -5\
+               and move_balle.ball.xcor() < brique.xcor() + 25\
+               and move_balle.ball.xcor() > brique.xcor() -25:
                 brique.hideturtle()
                 ligne_briques.remove(brique)
                 move_balle.ball.dy *= -1
 
                 if all(len(ligne) == 0 for ligne in brick.briques):
                     win.message_victoire()
-                    return
+                    return True
 
 
 
