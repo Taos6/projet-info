@@ -10,7 +10,7 @@ window.bgcolor("black")
 window.setup(width=600, height=600)
 
 def collision_barre():
-    if move_balle.ball.ycor() + 7.5 > -230 and move_balle.ball.ycor() - 7.5 < -220\
+    if move_balle.ball.ycor() > -230 and move_balle.ball.ycor() < -220\
     and move_balle.ball.xcor() < move_barre.barre.xcor() + 50\
     and move_balle.ball.xcor() > move_barre.barre.xcor() - 50:
         move_balle.ball.dy *= -1
