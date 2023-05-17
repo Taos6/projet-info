@@ -1,3 +1,6 @@
+"""Ce fichier importe tous les autres et fais tourner le jeu"""
+
+
 import turtle as tr
 import game_over as over
 import creation_mouvement_balle as move_balle

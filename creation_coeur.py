@@ -1,3 +1,5 @@
+"""Fais apparaître les coeurs du joueur et un message explicatif"""
+
 import turtle as tr
 import time
 
