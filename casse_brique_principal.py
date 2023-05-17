@@ -13,6 +13,7 @@ import collision_brique_balle as collision2
 window = tr.Screen()
 window.bgcolor("black")
 window.setup(width=600, height=600)
+window.tracer(0)
 
 coeur.nb_vie()
 
