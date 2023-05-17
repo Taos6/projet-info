@@ -33,4 +33,5 @@ while True:
     elif coeur.vie == 0:
         coeur.carre1.hideturtle()
         over.game_over()
+        break
         
