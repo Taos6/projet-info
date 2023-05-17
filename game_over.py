@@ -2,9 +2,14 @@
 import creation_mouvement_balle as move_balle
 import turtle as tr
 
+window = tr.Screen()
+window.bgcolor("black")
+window.setup(width=600, height=600)
+
 
 def game_over_text():
     """Fais apparaître le texte Game Over"""
+    window.clear()
     game_over_text = tr.Turtle()
     game_over_text.color("red")
     game_over_text.penup()
