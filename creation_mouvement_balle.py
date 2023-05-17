@@ -10,8 +10,8 @@ ball.shapesize(stretch_wid = 0.75, stretch_len = 0.75)
 ball.color("red")
 ball.penup()
 ball.setposition(0,-150)
-ball.dx = -5
-ball.dy = -5
+ball.dx = -3
+ball.dy = -3
 
 
 def deplacement_balle():
