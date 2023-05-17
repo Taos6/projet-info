@@ -7,7 +7,7 @@ window.bgcolor("black")
 window.setup(width=600, height=600)
 
 
-def game_over_text():
+def game_over():
     """Fais apparaître le texte Game Over"""
     window.clear()
     game_over_text = tr.Turtle()
@@ -18,10 +18,3 @@ def game_over_text():
     game_over_text.hideturtle()
     
 
-def game_over():
-    """Stoppe la partie"""
-    move_balle.ball.dx = 0
-    move_balle.ball.dy = 0
-    move_balle.ball.clear()
-    game_over_text()
-    text_restart_game()
