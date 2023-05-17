@@ -23,6 +23,8 @@ while True:
     move_balle.deplacement_balle()
     collision1.collision_barre()
     collision2.collision_brique()
+    if collision2.collision_brique == True:
+        break
     if move_balle.ball.ycor() < -280:
         coeur.vie -= 1
         move_balle.ball.goto(0,-150)
