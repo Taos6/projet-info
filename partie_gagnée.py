@@ -1,21 +1,19 @@
-"""détermine le nombre de briques"""
+""""Vérifie si les briques ont disparus et affiche un message de victoire"""
 
+import turtle as tr
 import module_briques as brick
 
-briques_restantes = len(brick.briques)
-
-
-"""affiche le message de victoire lorsqu'il n'y a plus de briques """
-
-def potentielle_victoire():
-
+"""Crée le message de victoire"""
+def message_victoire():
+    message = tr.Turtle()
+    message.speed(0)
+    message.color("withe")
+    message.hideturtle()
+    message.goto(0,0)
+    message.write("Bravo tu as gagné !", align = "center",font=("chalkduster", 40, "normal"))
     
-    if briques_restantes == 0:
-        potentielle_victoire = tr.Turtle()
-        potentielle_victoire.color("green")
-        potentielle_victoire.penup()
-        potentielle_victoire.goto(0, 50) # pour afficher le message plus haut  
-        potentielle_victoire.write("Bravo tu as gagné ! ", align = "center", font = ("chalkduster", 40, "normal"))
-        potentielle_victoire.hideturtle()
-                
+"""Détermine si il reste des briques"""
+def victoire():
+    if all(len(ligne) == 0 for ligne in brick.briques):
+        message_victoire()
         
