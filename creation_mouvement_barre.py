@@ -2,14 +2,16 @@
 
 import turtle as tr
 
+
 window = tr.Screen()
 window.bgcolor("black")
 window.setup(width=600, height=600)
 
+tr.register_shape("image_barre.gif")
 
 barre = tr.Turtle()
 barre.speed(0)
-barre.shape("square")
+barre.shape("image_barre.gif")
 barre.shapesize(stretch_wid = 0.25, stretch_len=5)
 barre.color("red")
 barre.penup()

@@ -10,9 +10,11 @@ import collision_balle_barre as collision1
 import module_briques as brik
 import collision_brique_balle as collision2
 
+tr.register_shape("fond jeu.gif")
 window = tr.Screen()
-window.bgcolor("black")
-window.setup(width=600, height=600)
+window.bgpic("fond jeu.gif")
+
+# window.setup(width=600, height=600)
 window.tracer(0)
 
 coeur.nb_vie()
