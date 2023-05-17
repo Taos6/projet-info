@@ -20,7 +20,6 @@ while True:
     collision1.collision_barre()
     collision2.collision_brique()
     if move_balle.ball.ycor() < -280:
-        print(move_balle.ball.ycor())
         coeur.vie -= 1
         move_balle.ball.goto(0,-150)
     elif coeur.vie == 2:
