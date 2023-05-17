@@ -2,6 +2,7 @@
 
 import creation_mouvement_balle as move_balle
 import module_briques as brick
+import partie_gagnée as win
 
 
 """Vérifie si la balle touche une brique"""
@@ -14,6 +15,12 @@ def collision_brique():
                 brique.hideturtle()
                 ligne_briques.remove(brique)
                 move_balle.ball.dy *= -1
+
+                if all(len(ligne) == 0 for ligne in brick.briques):
+                    win.message_victoire()
+                    return
+
+
 
 
 
