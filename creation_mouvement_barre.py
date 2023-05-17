@@ -19,7 +19,7 @@ barre.setposition(0,-225)
 def aller_droite():
     """Permer à la barre d'aller à droite"""
     x = barre.xcor()
-    x += 20
+    x += 30
     barre.setx(x)
 
 window.listen()
@@ -30,7 +30,7 @@ window.onkeypress(aller_droite,"d")
 def aller_gauche():
     """Permet à la barre d'aller à gauche"""
     x = barre.xcor()
-    x -= 20
+    x -= 30
     barre.setx(x)
 
 window.listen()
