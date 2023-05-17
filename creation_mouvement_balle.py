@@ -20,13 +20,13 @@ def deplacement_balle():
     ball.setx(ball.xcor() + ball.dx)
     ball.sety(ball.ycor() + ball.dy)
         
-    if ball.xcor() > 280:     # Rebond à droite
+    if ball.xcor() > 285:  # Rebond à droite
         ball.dx *= -1
-    elif ball.xcor() < -280:  # Rebond à gauche
+    elif ball.xcor() < -285:  # Rebond à gauche
         ball.dx *= -1
-    elif ball.ycor() > 280:   # Rebond en haut
+    elif ball.ycor() > 285:   # Rebond en haut
         ball.dy *= -1
-    elif ball.ycor() < -280:  # Rebond en bas
+    elif ball.ycor() < -285:  # Rebond en bas
         ball.dy *= -1
         
         
