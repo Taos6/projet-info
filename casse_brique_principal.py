@@ -24,8 +24,8 @@ while True:
     window.update()
     move_balle.deplacement_balle()
     collision1.collision_barre()
-    test_victoire = collision2.collision_brique()
-    if test_victoire == True:
+    TEST_VICTOIRE = collision2.collision_brique()
+    if TEST_VICTOIRE is True:
         break
     if move_balle.ball.ycor() < -280:
         coeur.vie -= 1
