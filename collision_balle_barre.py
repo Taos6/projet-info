@@ -10,11 +10,13 @@ window.bgcolor("black")
 window.setup(width=600, height=600)
 
 def collision_barre():
+    """Vérifie la collision entre la balle et la barre et change la directionde la balle
+        si il y a une collision"""
     if move_balle.ball.ycor() > -230 and move_balle.ball.ycor() < -220\
     and move_balle.ball.xcor() < move_barre.barre.xcor() + 50\
     and move_balle.ball.xcor() > move_barre.barre.xcor() - 50:
         move_balle.ball.dy *= -1
-        
+
 
 if __name__ == "__main__":
     while True:
@@ -23,7 +25,3 @@ if __name__ == "__main__":
         collision_barre()
         if move_balle.ball.ycor() < -280:
             move_balle.ball.goto(0,-150)
-        
-        
-        
-        
