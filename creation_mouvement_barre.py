@@ -11,11 +11,10 @@ barre.color("red")
 barre.penup()
 barre.setposition(0,-225)
 
-if __name__ == "__main__":
-    window = tr.Screen()
-    window.bgcolor("black")
-    window.setup(width=600, height=600)
-
+tr.register_shape("fond jeu.gif")
+window = tr.Screen()
+window.bgpic("fond jeu.gif")
+window.tracer(0)
 
 
 def aller_droite():
