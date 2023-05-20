@@ -1,4 +1,6 @@
 """Gère la défaite"""
+
+
 import turtle as tr
 
 tr.register_shape("fond jeu.gif")
