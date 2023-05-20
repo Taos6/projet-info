@@ -1,5 +1,6 @@
 """Fichier gérant la collision entre la balle et la barre"""
 
+
 import turtle as tr
 import creation_mouvement_balle as move_balle
 import creation_mouvement_barre as move_barre
@@ -8,6 +9,7 @@ import creation_mouvement_barre as move_barre
 window = tr.Screen()
 window.bgcolor("black")
 window.setup(width=600, height=600)
+
 
 def collision_barre():
     """Vérifie la collision entre la balle et la barre et change la directionde la balle

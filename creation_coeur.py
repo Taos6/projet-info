@@ -1,7 +1,7 @@
 """Fais apparaître les coeurs du joueur et un message explicatif"""
 
-import turtle as tr
 
+import turtle as tr
 
 vie = 3
 tr.register_shape("image coeur.gif")
