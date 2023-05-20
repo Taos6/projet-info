@@ -1,5 +1,6 @@
 """ce fichier s'occuppe de la création des briques de notre jeu"""
 
+
 import turtle as tr
 import random 
 
@@ -15,7 +16,6 @@ def fabrication_briques(x, y, colors):
     """Fonction pour créer une ligne de briques"""
     index = random.randint(0,len(colors) - 1)
     row = []
-    
     for i in range(8):
         
         brique = tr.Turtle()

@@ -8,6 +8,7 @@ window = tr.Screen()
 window.bgpic("fond jeu.gif")
 window.tracer(0)
 
+
 def game_over():
     """Fais apparaître le texte Game Over"""
     window.clear()

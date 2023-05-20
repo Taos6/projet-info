@@ -1,3 +1,5 @@
+"""Debut du déplacement de la balle, mais mauvaise stratégie"""
+
 import turtle as tr
 import random
 
@@ -16,6 +18,7 @@ ball.setposition(0,-150)
 
 
 def deplacement_aleatoire():
+    """Déplacement de la balle aléatoirement"""
     while True:
         x = random.randint(-200, 200)
         y = random.randint(-200, 200)

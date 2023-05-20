@@ -1,9 +1,9 @@
 """Fichier gérant les collisions entre les briques et la balle"""
 
+
 import creation_mouvement_balle as move_balle
 import module_briques as brick
 import partie_gagnée as win
-
 
 
 def collision_brique(): 

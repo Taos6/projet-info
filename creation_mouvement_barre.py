@@ -1,5 +1,6 @@
 """Création et déplacement de la barre"""
 
+
 import turtle as tr
 
 tr.register_shape("image_barre.gif")
