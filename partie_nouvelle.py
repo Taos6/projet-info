@@ -33,3 +33,12 @@ def recommencer():
     
 def mise_relation():
     
+    while True:
+        en_jeux()
+        
+        if recommencer.partie_restart():
+            recommencer()
+            
+        else:
+            break
+    
