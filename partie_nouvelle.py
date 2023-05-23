@@ -105,7 +105,6 @@ def quitter():
     tr.bye()
     
 
-recommencer()
 
 window.listen()
 window.onkeypress(Nouvelle_partie, "n")
