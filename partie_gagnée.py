@@ -9,8 +9,8 @@ window = tr.Screen()
 window.bgcolor("black")
 window.setup(width=600, height=600)
 
-"""Crée le message de victoire"""
 def message_victoire():
+    """Crée le message de victoire"""
     window.clear()
     message = tr.Turtle()
     message.speed(0)
