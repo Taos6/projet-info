@@ -7,7 +7,6 @@ window = tr.Screen()
 window.bgcolor("black")
 window.setup(width=600, height=600)
 
-
 ball = tr.Turtle()
 ball.speed(0)
 ball.shape("circle")
