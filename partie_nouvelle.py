@@ -1,6 +1,3 @@
-
-
-
 """Vérifie si le joueur veut rejouer, si oui une nouvelle partie est lancée, sinon la fenêtre est fermée"""
 
 
@@ -82,16 +79,18 @@ def Nouvelle_partie():
             over.game_over()
 
         break
-        recommencer()
-        
+    recommencer()
+ 
+ 
+
 def recommencer():
     """ cette fonction permet à l'utilisateur de choisir s'il veut recommencer une partie ou non."""
 
-rejouer = input("Veux-tu relancer une partie (oui/non) ?")
+    rejouer = input("Veux-tu relancer une partie (oui/non) ?")
 
-if rejouer == 'oui':
-    nouvelle_partie()
-else:
-    break
+    if rejouer == 'oui':
+        nouvelle_partie()
+    else:
+        tr.bye()
+    
 
-tr.bye()
