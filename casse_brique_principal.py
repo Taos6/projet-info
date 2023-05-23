@@ -25,12 +25,14 @@ while True:
     window.update()
     move_balle.deplacement_balle()
     collision1.collision_barre()
-    TEST_VICTOIRE = collision2.collision_brique()
-    if TEST_VICTOIRE is True:
-        break
+    #TEST_VICTOIRE = collision2.collision_brique()
+    #if TEST_VICTOIRE is True:
+        #break
+    
     if move_balle.ball.ycor() < -280:
         coeur.vie -= 1
         move_balle.ball.goto(0,-150)
+        move_balle.ball.dy *= -1
     elif coeur.vie == 2:
         coeur.vie3.hideturtle()
     elif coeur.vie == 1:
@@ -40,5 +42,4 @@ while True:
         over.game_over()
         break
 
-
-nouveau.recommencer()
+partie.nouveau()
