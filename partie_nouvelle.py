@@ -23,4 +23,5 @@ def en_jeux():
     
 def restart():
     
-    coeur.vie
+    coeur.vie = 3
+    move_balle.ball.goto(0, -150)
