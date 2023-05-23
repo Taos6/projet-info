@@ -36,7 +36,7 @@ def mise_relation():
     while True:
         en_jeux()
         
-        if recommencer.partie_restart():
+        if partie_restart.recommencer():
             recommencer()
             
         else:
