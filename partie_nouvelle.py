@@ -42,3 +42,5 @@ def mise_relation():
         else:
             break
     
+    tr.bye()
+    
