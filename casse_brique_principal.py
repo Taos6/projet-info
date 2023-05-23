@@ -41,4 +41,4 @@ while True:
         over.game_over()
         break
 
-partie.recommencer()
+partie.nouveau()
