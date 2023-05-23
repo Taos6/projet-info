@@ -23,3 +23,4 @@ def en_jeux():
     
 def restart():
     
+    coeur.vie
