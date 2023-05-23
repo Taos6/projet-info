@@ -7,8 +7,6 @@ tr.register_shape("image_barre.gif")
 barre = tr.Turtle()
 barre.speed(0)
 barre.shape("image_barre.gif")
-# barre.shapesize(stretch_wid = 0.25, stretch_len=5)
-# barre.color("red")
 barre.penup()
 barre.setposition(0,-225)
 
