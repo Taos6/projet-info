@@ -9,6 +9,7 @@ import creation_coeur as coeur
 import collision_balle_barre as collision1
 import module_briques as brick
 import collision_brique_balle as collision2
+import partie_nouvelle as nouveau
 
 tr.register_shape("fond jeu.gif")
 window = tr.Screen()
@@ -24,9 +25,9 @@ while True:
     window.update()
     move_balle.deplacement_balle()
     collision1.collision_barre()
-    TEST_VICTOIRE = collision2.collision_brique()
-    if TEST_VICTOIRE is True:
-        break
+    #TEST_VICTOIRE = collision2.collision_brique()
+    #if TEST_VICTOIRE is True:
+        #break
     if move_balle.ball.ycor() < -280:
         coeur.vie -= 1
         move_balle.ball.goto(0,-150)
@@ -39,4 +40,5 @@ while True:
         coeur.vie1.hideturtle()
         over.game_over()
         break
-        
+
+partie.nouveau()
