@@ -9,17 +9,14 @@ import creation_coeur as coeur
 import collision_balle_barre as collision1
 import module_briques as brick
 import collision_brique_balle as collision2
-import partie_nouvelle as nouveau
+
 
 tr.register_shape("fond jeu.gif")
 window = tr.Screen()
 window.bgpic("fond jeu.gif")
-
-# window.setup(width=600, height=600)
 window.tracer(0)
 
 coeur.nb_vie()
-
 
 while True:
     window.update()
@@ -40,8 +37,3 @@ while True:
         over.game_over()
         break
         
-
-
-nouveau.recommencer()
-
-
