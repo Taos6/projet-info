@@ -4,9 +4,11 @@
 import turtle as tr
 import random 
 
+tr.register_shape("fond jeu.gif")
 window = tr.Screen()
-window.bgcolor("black")
-window.setup(width=600, height=600)
+window.bgpic("fond jeu.gif")
+#window.bgcolor("black")
+# window.setup(width=600, height=600)
 window.register_shape("brick", ((0,0), (10,0), (10,50), (0,50)))
 
 colors = ["sky blue", "tomato", "lime green", "yellow"]
