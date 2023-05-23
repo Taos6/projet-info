@@ -31,4 +31,5 @@ def recommencer():
     
     
     
-def 
+def mise_relation():
+    
