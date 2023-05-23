@@ -1,4 +1,4 @@
-"""Création de la balle"""
+"""Création de la balle première réussite"""
 
 
 import turtle as tr
