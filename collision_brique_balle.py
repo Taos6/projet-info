@@ -17,7 +17,6 @@ def collision_brique():
                 brique.hideturtle()
                 ligne_briques.remove(brique)
                 move_balle.ball.dy *= -1
-                brick.briques.clear()
                 if all(len(ligne) == 0 for ligne in brick.briques):
                     win.message_victoire()
                     return True
