@@ -1,4 +1,4 @@
-
+import partie_restart
 
 def en_jeux():
     
