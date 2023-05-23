@@ -16,5 +16,5 @@ def game_over():
     game_over_text.color("red")
     game_over_text.penup()
     game_over_text.goto(0, 50) # pour afficher le message plus haut
-    game_over_text.write("Game Over :/", align = "center", font = ("chalkduster", 40, "normal"))
+    game_over_text.write("GAME OVER :/", align = "center", font = ("chalkduster", 38, "normal"))
     game_over_text.hideturtle()
