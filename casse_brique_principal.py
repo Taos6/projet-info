@@ -36,4 +36,3 @@ while True:
         coeur.vie1.hideturtle()
         over.game_over()
         break
-        

@@ -5,9 +5,10 @@ import module_briques as brick
 import creation_mouvement_balle as move_balle
 import creation_mouvement_barre as move_barre
 
+tr.register_shape("fond jeu.gif")
 window = tr.Screen()
-window.bgcolor("black")
-window.setup(width=600, height=600)
+window.bgpic("fond jeu.gif")
+window.tracer(0)
 
 def message_victoire():
     """Crée le message de victoire"""

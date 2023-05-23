@@ -20,5 +20,3 @@ def collision_brique():
                 if all(len(ligne) == 0 for ligne in brick.briques):
                     win.message_victoire()
                     return True
-                
-                
