@@ -40,10 +40,12 @@ def mise_relation():
         en_jeux()
         
         if partie_restart.recommencer():
-            recommencer()
-            
+            recommencer()   
         else:
             break
     
     tr.bye()
+    
+if __name__ == "__mise_relation__":
+    mise(relation)
     
