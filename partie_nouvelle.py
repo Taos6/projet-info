@@ -1,6 +1,13 @@
 """Vérifie si le joueur veut rejouer, si oui une nouvelle partie est lancée, sinon la fenêtre est fermée"""
 
 
+import turtle as tr
+# from module_briques import fabrication_briques
+
+tr.register_shape("fond jeu.gif")
+window = tr.Screen()
+window.bgpic("fond jeu.gif")
+window.tracer(0)
 
 
 def Nouvelle_partie():
@@ -59,9 +66,9 @@ def Nouvelle_partie():
     barre.penup()
     barre.setposition(0,-225)
 
-    for i in range (3):
-        briques.append(fabrication_briques(x_base, y_base - i * 35, colors))
-    window.update
+#     for i in range (3):
+#         briques.append(brique.fabrication_briques(x_base, y_base - i * 35, colors))
+#     window.update
 
     while True:
         window.update()
@@ -81,15 +88,27 @@ def Nouvelle_partie():
             over.game_over()
 
         break
-        recommencer()
-        
+
+
+
 def recommencer():
-    """ cette fonction permet à l'utilisateur de choisir s'il veut recommencer une partie ou non."""
+    message = tr.Turtle()
+    message.speed(0)
+    message.color("blue")
+    message.penup()
+    message.setposition(0,0)
+    message.write("Appuie sur n pour recommencer et q pour quitter", align = "center",font=("chalkduster", 20, "normal"))
+    message.hideturtle()
 
-    rejouer = input("Veux-tu relancer une partie ?")
 
-    if rejouer ==  window.onkeypress(nouvelle_partie, "r"):
-        nouvelle_partie()
-    else:
-        tr.bye()
+def quitter():
+    tr.bye()
+    
+
+recommencer()
+
+window.listen()
+window.onkeypress(Nouvelle_partie, "n")
+window.onkeypress(quitter,"q")
+
 
