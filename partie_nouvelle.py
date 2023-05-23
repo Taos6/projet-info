@@ -1,6 +1,7 @@
 import partie_restart
 
 def en_jeux():
+    """Cette fonction s'occupe de définir la partie en cours"""
     
     while True:
         window.update()
@@ -22,6 +23,7 @@ def en_jeux():
         break
     
 def recommencer():
+    """Cette fonction réinitialise les paramètres de jeu"""
     
     coeur.vie = 3
     move_balle.ball.goto(0, -150)
@@ -32,6 +34,7 @@ def recommencer():
     
     
 def mise_relation():
+    """Cette fonction permet de relancer le jeu si l'utilisateur le veut, ou alors de quitter le jeux s'il ne le veut pas"""
     
     while True:
         en_jeux()
