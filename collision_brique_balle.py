@@ -3,7 +3,7 @@
 
 import creation_mouvement_balle as move_balle
 import module_briques as brick
-import partie_gagnée as win
+import victoire as win
 
 
 def collision_brique(): 
@@ -20,3 +20,5 @@ def collision_brique():
                 if all(len(ligne) == 0 for ligne in brick.briques):
                     win.message_victoire()
                     return True
+                
+                
