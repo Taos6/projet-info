@@ -25,3 +25,6 @@ def restart():
     
     coeur.vie = 3
     move_balle.ball.goto(0, -150)
+    coeur.carre1.showturtle()
+    coeur.carre2.showturtle()
+    coeur.carre3.showturtle()
