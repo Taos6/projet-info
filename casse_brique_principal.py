@@ -9,8 +9,7 @@ import creation_coeur as coeur
 import collision_balle_barre as collision1
 import module_briques as brick
 import collision_brique_balle as collision2
-import partie_restart
-import partie_nouvelle
+import partie_nouvelle as nouveau
 
 tr.register_shape("fond jeu.gif")
 window = tr.Screen()
@@ -42,4 +41,4 @@ while True:
         over.game_over()
         break
 
-en_jeux()
+partie.recommencer()
