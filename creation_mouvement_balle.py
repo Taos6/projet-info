@@ -33,4 +33,4 @@ if __name__ == "__main__":
     window.bgpic("fond jeu.gif")
     window.tracer(0)
     deplacement_balle()
-    window.listen()
+#     window.listen()
